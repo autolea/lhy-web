@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>笠衡のpersonal web</title>
+    <style>
+      body {
+        margin: 0;
+        height: 100vh;
+      }
+
+      .flex-container {
+        display: -webkit-flex;
+        display: flex;
+        max-width: 900px;
+        background-color: lightgrey;
+        margin: 30px auto;
+      }
+
+      .flex-item {
+        background-color: rgb(84, 95, 240);
+        margin: 10px;
+        flex: 1;
+      }
+
+      p {
+        text-size-adjust: 100%;
+        line-height: 1.7;
+        font-size: 17px;
+      }
+
+      #deal {
+        font-size: 20px;
+        background-color: cornflowerblue;
+        margin: 10px;
+        padding: 5px;
+      }
+
+      div.polaroid {
+        background-color: white;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+          0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        margin-bottom: 25px;
+      }
+
+      div.container {
+        text-align: center;
+        padding: 5px 5px;
+      }
+
+      @media screen and (max-width: 500px) {
+        .flex-container {
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+      <div style="text-align: center;background-color: lightgrey; padding: 15px;">
+    <img src="bloom.png" alt="flying dandelion"
+      style="width: 50px; border-radius: 8px" />
+  </div>
+  <article style="
+        max-width: 900px;
+        margin: 30px auto;
+        padding: 10px;
+        text-size-adjust: 100%;
+        line-height: 1.7;
+        font-size: 17px;
+      ">
+    <!--这里的article标签设置一下背景颜色，字体颜色也可以考虑改一下-->
+    <p>你好鸭！我是笠衡，现是一名就读于新疆大学的大二学生。</p>
+    <p>
+      这是我的一个个人网站，现在它还是一个非常简单的网站，但是我随着我不断地学习，后面会不断地完善我的这个个人网站。
+    </p>
+    <p>
+      目前，以我所想的，我会在我的个人网站里写上我的一些兴趣爱好，我的一些想要实施的想法和我的规划，就是自己的一些战略计划和作业计划。
+    </p>
+    <p>后面我会根据自己的想法，不断地丰富网站。</p>
+  </article>
+  <div class="flex-container">
+    <div class="flex-item">
+      <h3>兴趣＆爱好</h3>
+      <p><b>摄影</b></br>虽然没有照相机，但我觉得重要的不是摄影的设备，而是善于发现生活中的美好和那一份回味与分享美好的快乐。</br>
+        <b>口琴</b></br>第一次吹口琴，还是初中的时候，学校音乐课要求学习。但是音乐课本身就少，所以口琴很快也就闲置了。当我再次拿起口琴时，还是因为上了大学看着其他同学都有才艺，而自己什么都不会，这攀比心一下子就上来了，哈哈哈。
+      </p>
+    </div>
+    <div class="flex-item">
+      <h3>我の想法</h3>
+      <p><b>我想</b>趁这个暑假加快对编程的学习，做一个简单的个人网站。</br>
+        <b>我想</b>在我对编程更加深入的学习后，先做一个主要面对我们宿舍五个人的网站，在扩大到班级、学院甚至是整个学校。那时候网站上的功能就不止一点两点了，它可以实现很多东西，你可以放开了去想象。</br>
+        <b>我想</b>在大三的时候重新申请大创项目或是挑战杯亦或是互联网+；并通过自己所做的网站等其他方式，寻找志同道合的人才，一起合作共赢。
+      </p>
+    </div>
+  </div>
+  <div class="flex-container" style="
+        flex-direction: column;
+      ">
+    <div style="text-align: center">
+      <h2 style="z-index: 1;margin-bottom: 2px;">未来规划</h2>
+    </div>
+    <div id="deal">
+      战略计划
+      <p style="margin-bottom: 2px;">
+        努力学习计算机方面的技术技能和采矿工程专业的基础技能。目标读研专攻采矿行业智能化转型方向，提高矿山智能化程度，使其提高矿物开采的安全性和高效性；同时支持远程线上操控，减少进出偏远矿山的频率，这样就可以多陪陪家人。</p>
+      <p style="margin: 2px; font-size: 10px;">ps:此战略计划是仅自己理想中的计划，在未来的现实生活中可能有较大的出入，之后会根据实际情况做出适应性的修改。
+        <br>同时，这只是一个我个人认为比较稳定且可行性较强的规划，当然未来的路肯定不止这一条，未来是具有不确定性的。在我的设想中如果可以通过大创项目或挑战杯或互联网+而进行创业的话，我当然是非常愿意去进行创业的。如果有大佬一定要带带我啊，我很好带的。
+      </p>
+    </div>
+    <div id="deal" style="margin-top: 0px;">
+      作业计划
+      <p>暑假期间，查找“智慧矿山”、“绿色矿山”相关论文期刊，初步了解采矿行业发展现状及问题。同时针对发展需要学习相关技术技能。</p>
+    </div>
+  </div>
+  <footer style="
+        margin-top: 60px;
+        background-color: #f1f1f1;
+        text-align: center;
+        padding: 40px;
+        font-size: 12px;
+      "></footer>
+
+  </body>
+</html>
